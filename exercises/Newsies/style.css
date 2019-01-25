@@ -1,0 +1,37 @@
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.main-story {
+    width: 39%;
+    text-align: left;
+    display: inline-block;
+}
+
+.main-side {
+    vertical-align: top;
+    width: 60%;
+    display: inline-block;
+}
+
+h2{
+    border-bottom: 5px double;
+    text-align: center;
+}
+
+.headStory {
+    column-count: 3;
+}
+.border {
+    border: 5px double;
+}
