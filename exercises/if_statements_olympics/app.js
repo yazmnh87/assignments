@@ -46,7 +46,7 @@ var person = {
 //     console.log("string");
 // }
 
-var r =
+var r = ""
 
 // console.log(typeof r)
 
@@ -54,8 +54,13 @@ var r =
 //     console.log('boolean');
 // }
 
-if (r === "undefined"){
-    console.log('variable is undefined');
-}
+// if (r !== 1){
+//     console.log('variable is undefined');
+// }
 
+
+
+//
+// Write an if statement comparing letters to numbers using < and >. Try to figure out what letters are going to be "greater than" other numbers or letters. For example: is "s" greater than 12?
+// Write a ternary statement that console.logs whether a number is odd or even. For example:
 
