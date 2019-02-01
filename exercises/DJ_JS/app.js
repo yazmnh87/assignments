@@ -6,5 +6,7 @@ changeBoxcolor.addEventListener("mouseout",function(){changeBoxcolor.style.backg
 
 changeBoxcolor.addEventListener("mousedown",function(){changeBoxcolor.style.backgroundColor = "red"});
 
-changeBoxcolor.addEventListener("mouseout",function(){changeBoxcolor.style.backgroundColor = "green"});
+changeBoxcolor.addEventListener("mouseup",function(){changeBoxcolor.style.backgroundColor = "green"});
+
+document.addEventListener("wheel",function(){changeBoxcolor.style.backgroundColor = "orange"});
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fill out Traveler information</h2>
+    <div id="container">
+            <form name="travform">
+                <div>
+                        <label for="firstname">First Name: </label>
+                        <input type="text" name="firstname" id="firstname" data-lpignore="true" placeholder="First Name">
+                </div>
+                <div>
+                        <label for="lastname">Lastname: </label> 
+                        <input type="text" name="lastname" id="lastname"  data-lpignore="true" placeholder="Last Name">
+                </div>
+                <div>
+                        <label for="age">Age: </label>
+                        <input name="age" type="number" id="age" placeholder="age">
+                </div>   
+    </div>
+        <input type="radio" name="Male" value="Male">Male<br>
+        <input type="radio" name="Female" value="Female">Female<br>
+        <div>
+            <Select>
+                    <option>Germany</option>
+                    <option>Hawaii</option>
+                    <option>Japan</option>
+            </Select>
+        </div>
+
+        <div>
+                <label for="cbveg">Vegetarian</label>
+                <input name="cbveg" type="checkbox" id="cbveg" value="Vegetarian">
+                <label for="cbglu">Gluten-Free</label>
+                <input name="cbglu" type="checkbox" id="cbglu" value="Gluten-Free">
+                <label for="cbkos">Kosher</label>
+                <input name="cbkos" type="checkbox" id="cbkos" value="Kosher">
+                <label for="none">None</label>
+                <input name="cbnone" type="checkbox" id="none" value="Kosher">
+        </div>
+</form>
+
+        <button id="submit">Submit</button>
+
+
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
