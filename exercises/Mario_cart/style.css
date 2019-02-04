@@ -1,0 +1,70 @@
+body{
+    background-color: #A3F5FF;
+}
+
+img{
+    height: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.img1{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+
+.img2{
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+
+.img3{
+    position: absolute;
+    left: 870px;
+    top: 300px;
+}
+
+.goombut{
+    position: absolute;
+    left: 250px;
+    top: 520px;
+}
+
+.bobb{
+    position: absolute;
+    top: 520px;
+    left: 580px;
+}
+
+.cheap{
+    position: absolute;
+    top: 520px;
+    left: 930px;
+}
+
+
+.goombuts{
+    position: absolute;
+    left: 280px;
+    top: 550px;
+}
+
+.bobbs{
+    position: absolute;
+    top: 550px;
+    left: 610px;
+}
+
+.cheaps{
+    position: absolute;
+    top: 550px;
+    left: 970px;
+}
