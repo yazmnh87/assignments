@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+}
+
+.container > .nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav > ul {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+li{
+    text-decoration: none;
+    align-items: stretch;
+}

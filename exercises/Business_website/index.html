@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -22,7 +23,9 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down black">
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
+                  <li><a href="#">Programs</a></li>
                   <li><a href="#">Register</a></li>
+                  <li><a href="#">Sign In</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-nav">
                         <li>
@@ -43,15 +46,15 @@
             </div>
         </div>
     </nav>
-        <div class="row">
-                        <div class="slider">
-                                <ul class="slides">
+
+                        <div class="slider" style="height: 570px;">
+                                <ul class="slides" style="height: 540px;">
                                   <li>
                                     <img src="abstract-ai-art-355948.jpg">
                                     <!-- CENTER ALIGN CAPTION -->
                                     <div class="caption center-align">
-                                      <h3 class="black-text">Center Caption</h3>
-                                      <h5 class="black-text">Lorem ipsum dolor sit amet.</h5>
+                                      <h3 class="White-text">Center Caption</h3>
+                                      <h5 class="White-text">Lorem ipsum dolor sit amet.</h5>
                                     </div>
                                   </li>
                                   <li>
@@ -66,13 +69,46 @@
                                     <img src="architecture-building-campus-356086.jpg">
                                     <!-- RIGHT ALIGN CAPTION -->
                                     <div class="caption center-align">
-                                      <h3>Right Align Caption</h3>
-                                      <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+                                      <h3 class="black-text">Right Align Caption</h3>
+                                      <h5 class="light black-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
                                     </div>
                                   </li>
                                 </ul>
                               </div>
-                </div>
+                              <div class="row">
+                                <div class="col s6">
+                                        <div class="card medium blue-grey lighten-4">
+                                                <div class="card-content white-text">
+                                                        <span class="card-title">Sponsors</span>
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptatem laborum blanditiis voluptas eos id minima commodi ullam alias pariatur.</p>
+                                                        <div class="card-image">
+                                                                <img src="WestValleyCity_Logo.png">
+                                                                <img src="UNLV.png">
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                    <div class="col s6">
+                                            <div class="card medium blue-grey lighten-4"">
+                                                   <div class="card-content white-text">
+                                                        <span class="card-title">Mentorship</span>
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptatem laborum blanditiis voluptas eos id minima commodi ullam alias pariatur.</p>
+                                                   </div>
+                                                   <div class="card-tabs">
+                                                        <ul class="tabs tabs-fixed-width">
+                                                            <li class="tab"><a href="#test4" class="black-text">Professionals</a></li>
+                                                            <li class="tab"><a class="active black-text" href="#test5">Alumni</a></li>
+                                                        </ul>
+                                                </div>
+                                                <div class="card-content grey lighten-4">
+                                                        <div id="test4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, est.</div>
+                                                        <div id="test5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non atque necessitatibus voluptate, iure consequuntur reiciendis eligendi fugit assumenda officia! Possimus dolore doloremque autem. Nisi possimus architecto nihil doloribus accusamus consectetur.</div>
+                                                      </div>
+                                            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
     
     
     
@@ -84,7 +120,7 @@
 
             $('.slider').slider({
                 indicators: true,
-                height: 400,
+                height: 600,
                 transition: 500,
                 interval: 6000
             });
