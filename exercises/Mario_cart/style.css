@@ -1,70 +1,138 @@
 body{
-    background-color: #A3F5FF;
+    display: flex;
+    background-color: lightblue;
 }
 
 img{
     height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+/* .header{
+    position: flex;
+} */
 
 h1{
+    height: 110px;
+    width: 100%;
     text-align: center;
-}
-
-h3{
-    text-align: center;
+    background-color: grey;
 }
 
 .img1{
-    position: absolute;
-    left: 200px;
-    top: 300px;
+    top: 10px;
+    left: 380px;
+    height: 100px;
+    align-items: center;
+}
+
+.header h1{
+    top: 10px;
+    left: 10px;
+    /* display: inline-block; */
 }
 
 .img2{
+    top: 10px;
+    left: 770px;
+    height: 100px;
     position: absolute;
-    left: 500px;
-    top: 300px;
 }
 
-.img3{
-    position: absolute;
-    left: 870px;
-    top: 300px;
+.img4{
+    margin-top: 50px;
+    margin-left: 148px;
+    margin-right: 12px;
 }
 
-.goombut{
-    position: absolute;
-    left: 250px;
-    top: 520px;
+.span1{
+    margin-left: 210px;
+    margin-right: 70px;
+    text-align: center;
 }
 
-.bobb{
-    position: absolute;
-    top: 520px;
-    left: 580px;
+.cos{
+    display: block;
 }
 
-.cheap{
-    position: absolute;
-    top: 520px;
-    left: 930px;
+.val1{
+    margin-left: 210px;
 }
 
-
-.goombuts{
-    position: absolute;
-    left: 280px;
-    top: 550px;
+.val2{
+    margin-left: 550px;
 }
 
-.bobbs{
-    position: absolute;
-    top: 550px;
-    left: 610px;
+.val3{
+    margin-left: 840px;
 }
 
-.cheaps{
-    position: absolute;
-    top: 550px;
-    left: 970px;
+.span2{
+    margin-left: 560px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.span3{
+    margin-left: 830px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.input1{
+    margin-left: 210px;
+    margin-right: 70px;
+}
+
+.input2{
+    margin-left: 120px;
+    margin-right: 70px;
+}
+
+.input3{
+    margin-left: 70px;
+}
+
+.text-cont{
+    margin-top: 30px;
+}
+
+button{
+    height: 10px;
+    width: 10px;
+    height: 60px;
+    width: 100px;
+}
+
+.button{
+    margin-left: 630px;
+    margin-top: 50px;
+}
+
+#goobres{
+    display: block;
+    margin-left: 220px;
+}
+
+#bobres{
+    display: block;
+    margin-left: 520px;
+}
+
+#cheapres{
+    display: block;
+    margin-left: 820px;
+}
+
+#cont-cont{
+    display: inline-block;
+}
+
+.bob-cont{
+    margin-left: -340px;
+}
+
+.cheap-cont{
+    margin-left: -700px;
 }

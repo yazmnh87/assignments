@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+    
+    <title>Document</title>
+</head>
+<body> 
+    <nav class="black" style="height: 124px;">
+        <div id="nav-wrapper">
+            <div class="container">
+                <a href="#" class="brand-logo black"><img src="Q3+Partners_1.png" style="height: 100px;" ></a>
+                <a class="button-collapse" data-activates="mobile-nav">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down black">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Register</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Programs</a>
+                        </li>
+                        <li>
+                            <a href="#">Sign In</a>
+                        </li>
+            </div>
+        </div>
+    </nav>
+        <div class="row">
+                        <div class="slider">
+                                <ul class="slides">
+                                  <li>
+                                    <img src="abstract-ai-art-355948.jpg">
+                                    <!-- CENTER ALIGN CAPTION -->
+                                    <div class="caption center-align">
+                                      <h3 class="black-text">Center Caption</h3>
+                                      <h5 class="black-text">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="academy-accomplishment-celebrate-267885.jpg">
+                                    <!-- LEFT ALIGN CAPTION -->
+                                    <div class="caption center-align">
+                                      <h3>Left Align Caption</h3>
+                                      <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="architecture-building-campus-356086.jpg">
+                                    <!-- RIGHT ALIGN CAPTION -->
+                                    <div class="caption center-align">
+                                      <h3>Right Align Caption</h3>
+                                      <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                </div>
+    
+    
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
+    <script>
+            $('.button-collapse').sideNav();
+
+            $('.slider').slider({
+                indicators: true,
+                height: 400,
+                transition: 500,
+                interval: 6000
+            });
+
+        </script>
+</body>
+</html>
