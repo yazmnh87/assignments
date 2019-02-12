@@ -1,0 +1,91 @@
+{
+    "appetizers":  [
+        {
+            "name": "pigs in a blankets",
+            "ingredients": ["weenies", "crossiant rolls"]
+        },
+        {
+            "name": "spinach dip",
+            "ingredients": ["spinach", "cheese"]
+        },
+        {
+            "name":"chips and salsa"
+        }
+        
+        ],
+    "Cold Sandwiches": [
+        {
+            "name": "italian",
+            "ingredients": ["ham", "cheese", "lettuce"]
+        },
+        {
+            "name": "ham and cheese",
+            "ingredients": ["spinach", "cheese"]
+        },
+        {
+            "name": "turkey and swiss",
+            "ingredients": ["spinach", "cheese"]
+        },
+        {
+            "name": "peanut butter and jelly",
+            "ingredients": ["spinach", "cheese"]
+        }
+    
+    ],
+"Hot Sandwiches": [
+    {
+       "name": "Meat ball",
+       "ingredients": ["spinach", "cheese"]
+     },
+     {
+         "name": "chicken parmagina",
+         "ingredients": ["spinach", "cheese"]
+     },
+     {
+         "name": "buffalo chicken",
+         "ingredients": ["spinach", "cheese"]
+     }
+    ],
+    "desserts": [
+        {
+          "name":  "chcoclate cake",
+          "ingredients": ["spinach", "cheese"]
+         },
+         {
+        "name": "apple pie",
+        "ingredients": ["spinach", "cheese"]
+         },
+         {
+             "name":"tiramisu",
+             "ingredients": ["spinach", "cheese"]
+         },
+         {
+             "name":"creme brulee",
+             "ingredients": ["spinach", "cheese"]
+         }
+    ],
+    "drinks": [
+        {
+        "name":"soda",
+        "caffeine": true,
+        "sugar": true
+         },
+         {
+        "name": "sparkling water",
+        "caffeine": false,
+        "sugar": false
+         },
+         {
+             "name": "water",
+             "caffeine": false,
+             "sugar": false
+         },
+         { 
+             "name":"juice",
+             "caffeine": false,
+             "sugar": true
+         }
+        ] 
+
+
+}

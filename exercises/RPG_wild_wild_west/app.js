@@ -111,24 +111,59 @@ if (readline.keyInYN('Continue...')) {
 //   prompt user for name
     var playername = readline.question("What is your name? ");
         
-    if (readline.keyInYN(`Press W to walk ${playername} `)) {
+     var action = readline.keyIn("Would you like to [w] Walk, [q] quit, or [p] Print player stats? ", {limit: 'wqp'}) 
+        if(action == "w"){
+            var total = 5;
         while (inGame){
             //walk until steps reach a certain amount and then encounter random friend or enemy and call associated function
-            walk() 
-            
-            if (mainChar.steps >= 26) {
-                console.log(mainChar.stepsTaken)
-                var random btwn 1-4
-                if random === 1{
-                    encounter()
+            // if (total > 0){
+            //     walk() 
+            //     total--
+            // }
+
+            walk()
+            if (mainChar.stepsTaken = 26 || mainChar.stepsTaken < 35) {
+                var random = Math.floor((Math.random() * 4)+1)
+                if (random === 1){
+                    var enemyDis = (randomEnemy())
+                    var action = readline.keyIn("Would you like to [r] Run or [f] Fight? ", {limit: 'rf'})
+                    if (action == "f"){
+                        console.log("You've been hit")
+                        console.log(enemyDis +  ` ${playername} + "You're health is now" ` + "HP: " + " " + mainChar.HP)
+                        if (mainChar.HP <= 75 ){
+                            console.log("You Won the fight")
+                            var action = readline.keyIn("Would you like to [w] walk  or [q] quit ", {limit: 'wq'})
+                            if (action == "w"){
+                                walk()
+                            } else {
+                                inGame == false;
+                            }
+                        }
+                    } else if (action == "r"){
+                        console.log("you're continuing on your journey");
+                    }
                 }
+            } else if (mainChar.stepsTaken >= 46){
+                console.log(mainChar.stepsTaken)
+                var random1 = Math.floor((Math.random() * 2)+1)
+                if(random1 === 1){
+                    encounterFriend ()
+                    console.log("You've encountered a friend")
+                    console.log(mainChar.HP)
+                }else {
+                    console.log("Continuing along your journey")
+                    console.log(mainChar.stepsTaken)
+                }
+                }
+         
             }
-        } 
 
-
+      } else if (action == "p"){
+          console.log(mainChar)
       } else {
         console.log('Exiting journey, youll start over');
       }
+     
 
     
 
@@ -137,33 +172,14 @@ if (readline.keyInYN('Continue...')) {
 //   Walking
 function walk(){
     var walking = steps[Math.floor(Math.random()*steps.length)]
-    // mainChar.stepsTaken = function () {
         if(mainChar.stepsTaken < stepsTotal){
-            mainChar.stepsTaken = mainChar.stepsTaken + walking
+            (mainChar.stepsTaken = mainChar.stepsTaken + walking)
+            console.log(mainChar.stepsTaken)
         } else if (mainChar.stepsTaken = stepsTotal){
             console.log("You've reached Disney Land")
-        
     
 }}
 
-function encounter (){
-    readline.keyInSelect["run", "fight"];
-    if run {
-        run()
-    }else {
-        fight()
-    }
-}
-
-function run (){
-    var random
-        if random < .5 {
-            damage
-            console.log(Hey user you just lost ${damage} amount of hp)
-        }else {
-            got away
-        }
-}
 
 //create function to inflict damage
 
@@ -183,12 +199,8 @@ function randomEnemy () {
     var randomEnemy = Math.floor(Math.random() * enemies.length)
     var random = Math.floor((Math.random() * 3) + 1)
 
-    for(var i = 0; i < random; i++){
-        
-        return ((mainChar.HP) + parseInt(enemies[randomEnemy].weapon.hp))
-        
+    return ((mainChar.HP) + parseInt(enemies[randomEnemy].weapon.hp));     
     }
-}
 
 
 //create friends
@@ -213,4 +225,4 @@ function encounterFriend (){
 // walk()
 
 
-//   console.log(mainChar.weapon[0][0])
+//   console.log(mainChar.weapon[0][0])`

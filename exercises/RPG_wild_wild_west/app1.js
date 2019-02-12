@@ -1,3 +1,8 @@
+
+
+var steps = [1, 3
+    , 6, 8, 9, 15, 25];
+var stepsTotal = 125;
 var enemyWeapons = [
     {
         weapon: 'Knife',
@@ -17,12 +22,9 @@ function randomEnemy () {
     var randomEnemy = Math.floor(Math.random() * enemies.length)
     var random = Math.floor((Math.random() * 3) + 1)
 
-    for(var i = 0; i < random; i++){
-        
-        return ((mainChar.HP) + parseInt(enemies[randomEnemy].weapon.hp))
-        
+    console.log(enemies[randomEnemy])      
     }
-}
+
 
 
 var enemies= [
@@ -61,11 +63,36 @@ var mainChar = {
 //  }
  
 
-
+function walk(){
+    var walking = steps[Math.floor(Math.random()*steps.length)]
+        if(mainChar.stepsTaken < stepsTotal){
+            (mainChar.stepsTaken = mainChar.stepsTaken + walking)
+            console.log(mainChar.stepsTaken)
+        } else if (mainChar.stepsTaken = stepsTotal){
+            console.log("You've reached Disney Land")
+    
+}}
 
  
 
-console.log(randomEnemy())
+console.log(walk())
 
  
 
+
+
+
+// function randomEnemy () {
+//     var randomEnemy = Math.floor(Math.random() * enemies.length)
+//     var random = Math.floor((Math.random() * 3) + 1)
+
+//     for(var i = 0; i < random; i++){
+        
+//         while(i <= random){
+//             console.log("You've been hit")
+//             break;
+//         }
+        
+//         return ((mainChar.HP) + parseInt(enemies[randomEnemy].weapon.hp))
+//     }
+// }
