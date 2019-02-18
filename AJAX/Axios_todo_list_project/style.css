@@ -1,0 +1,27 @@
+#results2{
+    border: 5px black solid;
+}
+
+
+img{
+    height: 100px;
+    width: 200px;
+}
+
+.container{
+    border: 5px black solid;
+}
+
+/* #inpt1{
+    border: 5px black solid;
+    opacity: 1;
+} */
+
+#test{
+    height: 230px;
+}
+
+/* 
+.strikend{
+    text-decoration: line-through;
+} */
