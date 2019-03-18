@@ -1,5 +1,8 @@
 window.addEventListener("load", display)
 
+
+
+
 function display(e){
     e.preventDefault()
     axios.get("https://api.vschool.io/bill/todo").then(function(response){
@@ -7,14 +10,12 @@ function display(e){
         // console.log(genHTTPOutput(response))
        genHTTPOutput(response.data);
        
+
 }) .catch(function(error){
     console.log(error)
 })
 
 } 
-
-
-
 var input = "input"
 var label = "label"
 var img = "img"
@@ -22,9 +23,6 @@ var div = "div"
 var br = "br"
 var a = "a"
 var icon = "i"
-
-
-
 function genHTTPOutput(response){
     response.forEach(function(todo,i){
         // var i = 1;
@@ -50,11 +48,12 @@ function genHTTPOutput(response){
         var imgUrl = document.createTextNode(todo.imgUrl)
         var completed = document.createTextNode(todo.completed)
         var todoid = document.createTextNode(todo._id)
+        console.log(todoid)
         var iconText = "clear"
         resultsElement.appendChild(div1);
         div1.className = "container"
         div1.appendChild(div2)
-        div2.id= todo._id
+        div2.id= "test"
         div2.appendChild(div3)
         div3.appendChild(title)
         div3.id = "titlediv"
@@ -65,47 +64,40 @@ function genHTTPOutput(response){
         div2.appendChild(div6)
         div6.appendChild(img1).src = todo.imgUrl
         div2.appendChild(div7)
-        div7.appendChild(input1)
+        div7.appendChild(input1).id = "inpt1"
         div7.id = "inputdiv"
         input1.className = "input-field"
         input1.type = "checkbox"
-        input1.id = `${todo._id}1`
         div7.appendChild(label1)
-        label1.setAttribute("for",`${todo._id}1`)
+        label1.setAttribute("for", "inpt1")
         div2.appendChild(div8)
         div8.appendChild(a1).href = "#";
         a1.appendChild(icon1)
         icon1.className = "material-icons right"
         icon1.id = "clearbtn"
         icon1.innerHTML = iconText
-       
-        input1.addEventListener("change", function(e){
-            console.log("this is working")
-            const ID = e.target.parentNode.parentNode.id
-            console.log(ID)
-            const updates = {
-                completed: e.target.checked
-            }
-            // put request to mark it true/false completed
-            axios.put(`https://api.vschool.io/bill/todo/${ID}`, updates).then(response => {
-                // getTodos()
-            })
-        })
         
-        icon1.addEventListener("click", function(e){
-            console.log('this is working')
-            const ID = e.target.parentNode.parentNode.parentNode.id
-            console.log(ID)
-            axios.delete(`https://api.vschool.io/bill/todo/${ID}`).then(response => {
-                e.target.parentNode.parentNode.remove()
-            }) .catch(function(error){
-                console.log(error)
-            })
-        })
-})
+        // for(var i =1; i < resultsElement.length; i++){
+        //     div1.id = `results${i}`
+        // }
 
-// strikeThrough()
+
+})
+// var resultsElement = document.getElementById("results2");
+// console.log(resultsElement)
+
+strikeThrough()
+document.getElementById("clearbtn").addEventListener("click", deleteItems(todoid))
 }
+
+function pushDivId () {
+    var resultsElement1 = document.getElementById("results").children;
+    var childrenArr = []
+    console.log(resultsElement1)
+    // for( var i = 0; resultsElement1.length; i++){
+    //     console.log(resultsElement1[i])
+        // childrenArr.push(resultsElement1[i])
+    }
 
 
 
@@ -115,16 +107,16 @@ function createElement (element) {
      return el1;
   }
 
-//   function strikeThrough(){
-//     var getInput1 = document.getElementById(`${todo._id}1`)
-//     // console.log(getInput1)
-//    var textDiv = document.getElementById('titlediv')
-// //    console.log(textDiv)
-//    if(getInput1.checked === true){
-//     //    console.log(textDiv)
-//        textDiv.style.textDecoration = 'line-through'
-//    } else textDiv.style.textDecoration = 'none'
-// }
+  function strikeThrough(){
+    var getInput1 = document.getElementById('inpt1')
+    // console.log(getInput1)
+   var textDiv = document.getElementById('titlediv')
+//    console.log(textDiv)
+   if(getInput1.checked === true){
+    //    console.log(textDiv)
+       textDiv.style.textDecoration = 'line-through'
+   } else textDiv.style.textDecoration = 'none'
+}
 
 document.getElementById("submit").addEventListener("click", postman)
 
@@ -202,3 +194,23 @@ function postman(e){
         
     
 })}
+
+
+
+function pushDivId () {
+    var resultsElement1 = document.getElementById("results").children;
+    var childrenArr = []
+    console.log(resultsElement1)
+    // for( var i = 0; resultsElement1.length; i++){
+    //     console.log(resultsElement1[i])
+        // childrenArr.push(resultsElement1[i])
+    }
+
+
+
+    inputArr = [];
+    getAllInputs = document.querySelectorAll('input')
+    for(var i =1; i < getAllInputs.length; i++){
+        inputArr.push(getAllInputs)
+        console.log(inputArr)
+    }
